@@ -1,5 +1,5 @@
 {
-	"name": "@bloobirds-it/rollup",
+	"name": "@robertio4/rollup",
 	"version": "2.79.2",
 	"description": "Next-generation ES module bundler",
 	"main": "dist/rollup.js",
