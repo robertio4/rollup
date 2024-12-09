@@ -16,7 +16,7 @@ jobs:
     name: Node 18 + Coverage (Linux)
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Setup Node
@@ -38,7 +38,7 @@ jobs:
     name: Node 16 + Extra Tests (Linux)
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -62,7 +62,7 @@ jobs:
     name: Node ${{ matrix.node }} (Linux)
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -82,7 +82,7 @@ jobs:
     name: Node ${{ matrix.node }} (macOS)
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -102,7 +102,7 @@ jobs:
     name: Node ${{ matrix.node }} (Windows)
     steps:
       - name: Checkout Commit
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
